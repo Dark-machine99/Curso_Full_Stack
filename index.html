@@ -4,19 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conviértete en un Desarrollador Full Stack | Tu Carrera en Tech</title>
-    
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            overflow-x: hidden;
+        }
+
+        .cta-button {
+            background-color: #238636;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(35, 134, 54, 0.4);
+        }
+
+        .radial-bg {
+            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+        }
+        
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hero section animation */
+        .hero-title {
+            animation: fadeInTop 1s ease-out;
+        }
+
+        .hero-subtitle {
+            animation: fadeInTop 1.2s ease-out;
+        }
+
+        .hero-cta {
+            animation: fadeInTop 1.4s ease-out;
+        }
+
+        @keyframes fadeInTop {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-[#0d1117] text-[#c9d1d9]">
 
     <!-- Hero Section -->
     <header class="relative overflow-hidden py-24 text-center radial-bg">
         <div class="absolute inset-0 z-0 opacity-10">
+            <!-- Background pattern can be an SVG or image, for simplicity we'll use a placeholder -->
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <pattern id="dot-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -72,7 +139,142 @@
         </div>
     </section>
 
-    <!-- ... (resto del contenido igual, solo se eliminó la parte <style>) ... -->
+    <section id="por-que-nosotros" class="py-16 bg-[#0d1117] text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-4">¿Por qué elegirnos?</h2>
+            <p class="text-lg mb-12 max-w-2xl mx-auto">
+                No solo aprenderás a programar, sino a pensar y actuar como un verdadero desarrollador profesional.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-2xl flex flex-col items-center text-center">
+                    <i class="fas fa-project-diagram text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Proyectos Reales</h3>
+                    <p class="text-sm">
+                        Nuestro enfoque es 100% práctico. Construirás un portafolio sólido con proyectos que te abrirán puertas.
+                    </p>
+                </div>
+                <div class="card p-6 rounded-2xl flex flex-col items-center text-center">
+                    <i class="fas fa-graduation-cap text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Mentores Expertos</h3>
+                    <p class="text-sm">
+                        Aprende de desarrolladores senior con años de experiencia en la industria tecnológica.
+                    </p>
+                </div>
+                <div class="card p-6 rounded-2xl flex flex-col items-center text-center">
+                    <i class="fas fa-handshake text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Soporte Laboral</h3>
+                    <p class="text-sm">
+                        Te ayudamos a preparar tu CV, tu portafolio y a practicar para las entrevistas técnicas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Cards Section -->
+    <section id="cursos" class="py-16 bg-[#0d1117] text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-4">Nuestros Programas</h2>
+            <p class="text-lg mb-12 max-w-2xl mx-auto">
+                Elige el camino que mejor se adapte a tus metas y a tu ritmo de aprendizaje.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Course Card 1 -->
+                <div class="card p-8 rounded-2xl text-left">
+                    <h3 class="text-2xl font-bold text-white mb-2">Bootcamp Full Stack Pro</h3>
+                    <p class="text-lg text-green-500 font-semibold mb-4">Modalidad: Intensiva, de tiempo completo</p>
+                    <p class="mb-6">
+                        Diseñado para quienes desean un cambio de carrera rápido. En 16 semanas, te transformaremos en un desarrollador listo para el mercado.
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 mb-6 text-sm sm:text-base">
+                        <li><i class="fas fa-calendar-alt text-green-500 mr-2"></i> <strong>Duración:</strong> 16 semanas</li>
+                        <li><i class="fas fa-video text-green-500 mr-2"></i> <strong>Clases:</strong> En vivo y grabadas</li>
+                        <li><i class="fas fa-laptop-code text-green-500 mr-2"></i> <strong>Proyectos:</strong> 5 proyectos de portafolio</li>
+                        <li><i class="fas fa-certificate text-green-500 mr-2"></i> <strong>Certificación:</strong> Incluida al finalizar</li>
+                    </ul>
+                    <a href="#" class="cta-button">
+                        Ver temario completo
+                    </a>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="card p-8 rounded-2xl text-left">
+                    <h3 class="text-2xl font-bold text-white mb-2">Curso Full Stack Flexible</h3>
+                    <p class="text-lg text-green-500 font-semibold mb-4">Modalidad: Online, a tu ritmo</p>
+                    <p class="mb-6">
+                        Ideal para quienes quieren aprender sin presiones. Accede a todo el contenido en video, ejercicios y proyectos cuando quieras.
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 mb-6 text-sm sm:text-base">
+                        <li><i class="fas fa-infinity text-green-500 mr-2"></i> <strong>Duración:</strong> Acceso de por vida</li>
+                        <li><i class="fas fa-play-circle text-green-500 mr-2"></i> <strong>Clases:</strong> Videos pregrabados</li>
+                        <li><i class="fas fa-users text-green-500 mr-2"></i> <strong>Comunidad:</strong> Foro de dudas y soporte</li>
+                        <li><i class="fas fa-file-invoice text-green-500 mr-2"></i> <strong>Contenido:</strong> Secciones modulares y actualizables</li>
+                    </ul>
+                    <a href="#" class="cta-button">
+                        Más información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-16 bg-[#0d1117]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-4">Historias de éxito</h2>
+            <p class="text-lg text-center mb-12 max-w-2xl mx-auto">
+                No confíes solo en nuestra palabra. Escucha lo que nuestros egresados tienen que decir.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card p-6 rounded-2xl text-center">
+                    <p class="italic text-lg mb-4">
+                        "El bootcamp fue intensivo pero valió la pena cada minuto. Conseguí mi primer empleo como desarrolladora front-end 3 semanas después de graduarme."
+                    </p>
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=A" alt="Avatar de Ana G." class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
+                        <p class="font-semibold text-white">Ana G.</p>
+                        <p class="text-sm">Desarrolladora en TechCorp</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="card p-6 rounded-2xl text-center">
+                    <p class="italic text-lg mb-4">
+                        "El soporte de los mentores es increíble. Me guiaron paso a paso hasta que entendí los conceptos más complejos. ¡Recomiendo este curso a cualquiera!"
+                    </p>
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=J" alt="Avatar de Juan P." class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
+                        <p class="font-semibold text-white">Juan P.</p>
+                        <p class="text-sm">Ingeniero de Software</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="card p-6 rounded-2xl text-center">
+                    <p class="italic text-lg mb-4">
+                        "Pasé de un trabajo sin futuro a una carrera que me apasiona. El temario es súper completo y está al día con las últimas tecnologías."
+                    </p>
+                    <div class="flex flex-col items-center">
+                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=M" alt="Avatar de Marta V." class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
+                        <p class="font-semibold text-white">Marta V.</p>
+                        <p class="text-sm">DevOps Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 text-center bg-gradient-to-r from-green-600 to-green-800 text-white rounded-t-3xl">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">¿Listo para comenzar tu carrera?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                No esperes más. El futuro de la tecnología te espera.
+            </p>
+            <a href="#cursos" class="cta-button bg-white text-green-800 hover:text-green-700">
+                ¡Inscríbete ahora!
+            </a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="py-8 text-center text-sm text-[#768390] bg-[#0d1117]">
