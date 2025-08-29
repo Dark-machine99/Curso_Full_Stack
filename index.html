@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conviértete en un Desarrollador Full Stack | Tu Carrera en Tech</title>
-    
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -12,6 +13,7 @@
     <!-- Estilos propios -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-[#0d1117] text-[#c9d1d9]">
 
     <!-- Hero Section -->
@@ -20,10 +22,10 @@
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <pattern id="dot-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
-                        <circle cx="2" cy="2" r="1.5" fill="#30363d"/>
+                        <circle cx="2" cy="2" r="1.5" fill="#30363d" />
                     </pattern>
                 </defs>
-                <rect width="100%" height="100%" fill="url(#dot-pattern)"/>
+                <rect width="100%" height="100%" fill="url(#dot-pattern)" />
             </svg>
         </div>
         <div class="relative z-10 container mx-auto px-4">
@@ -31,11 +33,17 @@
                 Domina el <span class="text-green-500">Desarrollo Web Full Stack</span>
             </h1>
             <p class="hero-subtitle text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                De la base de datos a la interfaz del usuario. Aprende a construir aplicaciones robustas y escalables con las tecnologías más demandadas del mercado.
+                De la base de datos a la interfaz del usuario. Aprende a construir aplicaciones robustas y escalables
+                con las tecnologías más demandadas del mercado.
             </p>
             <a href="#cursos" class="hero-cta cta-button">
                 Ver nuestros cursos
             </a>
+            <!-- Botón para abrir modal -->
+            <button id="openModal"
+                class="hero-cta cta-button bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-500 transition">
+                Regístrate Ahora
+            </button>
         </div>
     </header>
 
@@ -45,27 +53,33 @@
             <h2 class="text-3xl font-bold text-white mb-12">Las tecnologías que dominarás</h2>
             <div class="flex justify-center items-center flex-wrap gap-10">
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=HTML" alt="HTML5" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=HTML" alt="HTML5"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">HTML5</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=CSS" alt="CSS3" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=CSS" alt="CSS3"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">CSS3</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=JS" alt="JavaScript" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=JS" alt="JavaScript"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">JavaScript</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=React" alt="React" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=React" alt="React"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">React</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=Node" alt="Node.js" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=Node" alt="Node.js"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">Node.js</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=SQL" alt="SQL" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=SQL" alt="SQL"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">SQL & NoSQL</p>
                 </div>
             </div>
@@ -74,16 +88,83 @@
 
     <!-- ... (resto del contenido igual, solo se eliminó la parte <style>) ... -->
 
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 hidden bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div class="bg-[#161b22] rounded-lg shadow-lg p-8 w-96 relative">
+            <!-- Botón cerrar -->
+            <button id="closeModal" class="absolute top-3 right-3 text-gray-400 hover:text-white">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <h2 class="text-2xl font-bold mb-6 text-white text-center">Regístrate</h2>
+
+            <form id="registerForm" class="space-y-4">
+                <div>
+                    <label for="nombre" class="block text-sm mb-1">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required
+                        class="w-full px-3 py-2 rounded bg-[#0d1117] border border-gray-700 focus:border-green-500 focus:ring focus:ring-green-500/50 text-white">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm mb-1">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-3 py-2 rounded bg-[#0d1117] border border-gray-700 focus:border-green-500 focus:ring focus:ring-green-500/50 text-white">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm mb-1">Contraseña</label>
+                    <input type="password" id="password" name="password" required
+                        class="w-full px-3 py-2 rounded bg-[#0d1117] border border-gray-700 focus:border-green-500 focus:ring focus:ring-green-500/50 text-white">
+                </div>
+                <button type="submit"
+                    class="w-full bg-green-600 hover:bg-green-500 text-white font-semibold py-2 rounded-lg transition">
+                    Crear cuenta
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Script Modal -->
+    <script>
+        const modal = document.getElementById("modal");
+        const openModal = document.getElementById("openModal");
+        const closeModal = document.getElementById("closeModal");
+
+        openModal.addEventListener("click", () => {
+            modal.classList.remove("hidden");
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.classList.add("hidden");
+        });
+
+        // Cerrar si hace clic fuera del contenido
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+
+        // Ejemplo: acción dinámica del formulario
+        document.getElementById("registerForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Registro exitoso de " + document.getElementById("nombre").value);
+            modal.classList.add("hidden");
+            e.target.reset();
+        });
+    </script>
+
+
     <!-- Footer -->
     <footer class="py-8 text-center text-sm text-[#768390] bg-[#0d1117]">
         <div class="container mx-auto px-4">
             <p>&copy; 2024 Cursos Full Stack. Todos los derechos reservados.</p>
             <p class="mt-2">
-                <a href="#" class="hover:text-white">Política de Privacidad</a> | 
+                <a href="#" class="hover:text-white">Política de Privacidad</a> |
                 <a href="#" class="hover:text-white">Términos y Condiciones</a>
             </p>
         </div>
     </footer>
 
 </body>
+
 </html>
