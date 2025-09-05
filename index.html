@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0d1117;
@@ -35,7 +36,7 @@
         .radial-bg {
             background: radial-gradient(circle at center, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
         }
-        
+
         .card {
             background-color: #161b22;
             border: 1px solid #30363d;
@@ -66,18 +67,20 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
+
 <body class="bg-[#0d1117] text-[#c9d1d9]">
 
     <!-- Hero Section -->
@@ -87,10 +90,10 @@
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <pattern id="dot-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
-                        <circle cx="2" cy="2" r="1.5" fill="#30363d"/>
+                        <circle cx="2" cy="2" r="1.5" fill="#30363d" />
                     </pattern>
                 </defs>
-                <rect width="100%" height="100%" fill="url(#dot-pattern)"/>
+                <rect width="100%" height="100%" fill="url(#dot-pattern)" />
             </svg>
         </div>
         <div class="relative z-10 container mx-auto px-4">
@@ -98,7 +101,8 @@
                 Domina el <span class="text-green-500">Desarrollo Web Full Stack</span>
             </h1>
             <p class="hero-subtitle text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                De la base de datos a la interfaz del usuario. Aprende a construir aplicaciones robustas y escalables con las tecnologías más demandadas del mercado.
+                De la base de datos a la interfaz del usuario. Aprende a construir aplicaciones robustas y escalables
+                con las tecnologías más demandadas del mercado.
             </p>
             <a href="#cursos" class="hero-cta cta-button">
                 Ver nuestros cursos
@@ -112,27 +116,33 @@
             <h2 class="text-3xl font-bold text-white mb-12">Las tecnologías que dominarás</h2>
             <div class="flex justify-center items-center flex-wrap gap-10">
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=HTML" alt="HTML5" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=HTML" alt="HTML5"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">HTML5</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=CSS" alt="CSS3" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=CSS" alt="CSS3"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">CSS3</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=JS" alt="JavaScript" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=JS" alt="JavaScript"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">JavaScript</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=React" alt="React" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=React" alt="React"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">React</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=Node" alt="Node.js" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=Node" alt="Node.js"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">Node.js</p>
                 </div>
                 <div class="text-center">
-                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=SQL" alt="SQL" class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
+                    <img src="https://placehold.co/100x100/161b22/c9d1d9?text=SQL" alt="SQL"
+                        class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 rounded-xl">
                     <p class="text-sm font-semibold">SQL & NoSQL</p>
                 </div>
             </div>
@@ -150,7 +160,8 @@
                     <i class="fas fa-project-diagram text-4xl text-green-500 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-2 text-white">Proyectos Reales</h3>
                     <p class="text-sm">
-                        Nuestro enfoque es 100% práctico. Construirás un portafolio sólido con proyectos que te abrirán puertas.
+                        Nuestro enfoque es 100% práctico. Construirás un portafolio sólido con proyectos que te abrirán
+                        puertas.
                     </p>
                 </div>
                 <div class="card p-6 rounded-2xl flex flex-col items-center text-center">
@@ -184,13 +195,18 @@
                     <h3 class="text-2xl font-bold text-white mb-2">Bootcamp Full Stack Pro</h3>
                     <p class="text-lg text-green-500 font-semibold mb-4">Modalidad: Intensiva, de tiempo completo</p>
                     <p class="mb-6">
-                        Diseñado para quienes desean un cambio de carrera rápido. En 16 semanas, te transformaremos en un desarrollador listo para el mercado.
+                        Diseñado para quienes desean un cambio de carrera rápido. En 16 semanas, te transformaremos en
+                        un desarrollador listo para el mercado.
                     </p>
                     <ul class="list-disc list-inside space-y-2 mb-6 text-sm sm:text-base">
-                        <li><i class="fas fa-calendar-alt text-green-500 mr-2"></i> <strong>Duración:</strong> 16 semanas</li>
-                        <li><i class="fas fa-video text-green-500 mr-2"></i> <strong>Clases:</strong> En vivo y grabadas</li>
-                        <li><i class="fas fa-laptop-code text-green-500 mr-2"></i> <strong>Proyectos:</strong> 5 proyectos de portafolio</li>
-                        <li><i class="fas fa-certificate text-green-500 mr-2"></i> <strong>Certificación:</strong> Incluida al finalizar</li>
+                        <li><i class="fas fa-calendar-alt text-green-500 mr-2"></i> <strong>Duración:</strong> 16
+                            semanas</li>
+                        <li><i class="fas fa-video text-green-500 mr-2"></i> <strong>Clases:</strong> En vivo y grabadas
+                        </li>
+                        <li><i class="fas fa-laptop-code text-green-500 mr-2"></i> <strong>Proyectos:</strong> 5
+                            proyectos de portafolio</li>
+                        <li><i class="fas fa-certificate text-green-500 mr-2"></i> <strong>Certificación:</strong>
+                            Incluida al finalizar</li>
                     </ul>
                     <a href="#" class="cta-button">
                         Ver temario completo
@@ -202,13 +218,18 @@
                     <h3 class="text-2xl font-bold text-white mb-2">Curso Full Stack Flexible</h3>
                     <p class="text-lg text-green-500 font-semibold mb-4">Modalidad: Online, a tu ritmo</p>
                     <p class="mb-6">
-                        Ideal para quienes quieren aprender sin presiones. Accede a todo el contenido en video, ejercicios y proyectos cuando quieras.
+                        Ideal para quienes quieren aprender sin presiones. Accede a todo el contenido en video,
+                        ejercicios y proyectos cuando quieras.
                     </p>
                     <ul class="list-disc list-inside space-y-2 mb-6 text-sm sm:text-base">
-                        <li><i class="fas fa-infinity text-green-500 mr-2"></i> <strong>Duración:</strong> Acceso de por vida</li>
-                        <li><i class="fas fa-play-circle text-green-500 mr-2"></i> <strong>Clases:</strong> Videos pregrabados</li>
-                        <li><i class="fas fa-users text-green-500 mr-2"></i> <strong>Comunidad:</strong> Foro de dudas y soporte</li>
-                        <li><i class="fas fa-file-invoice text-green-500 mr-2"></i> <strong>Contenido:</strong> Secciones modulares y actualizables</li>
+                        <li><i class="fas fa-infinity text-green-500 mr-2"></i> <strong>Duración:</strong> Acceso de por
+                            vida</li>
+                        <li><i class="fas fa-play-circle text-green-500 mr-2"></i> <strong>Clases:</strong> Videos
+                            pregrabados</li>
+                        <li><i class="fas fa-users text-green-500 mr-2"></i> <strong>Comunidad:</strong> Foro de dudas y
+                            soporte</li>
+                        <li><i class="fas fa-file-invoice text-green-500 mr-2"></i> <strong>Contenido:</strong>
+                            Secciones modulares y actualizables</li>
                     </ul>
                     <a href="#" class="cta-button">
                         Más información
@@ -229,10 +250,12 @@
                 <!-- Testimonial 1 -->
                 <div class="card p-6 rounded-2xl text-center">
                     <p class="italic text-lg mb-4">
-                        "El bootcamp fue intensivo pero valió la pena cada minuto. Conseguí mi primer empleo como desarrolladora front-end 3 semanas después de graduarme."
+                        "El bootcamp fue intensivo pero valió la pena cada minuto. Conseguí mi primer empleo como
+                        desarrolladora front-end 3 semanas después de graduarme."
                     </p>
                     <div class="flex flex-col items-center">
-                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=A" alt="Avatar de Ana G." class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
+                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=A" alt="Avatar de Ana G."
+                            class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
                         <p class="font-semibold text-white">Ana G.</p>
                         <p class="text-sm">Desarrolladora en TechCorp</p>
                     </div>
@@ -240,10 +263,12 @@
                 <!-- Testimonial 2 -->
                 <div class="card p-6 rounded-2xl text-center">
                     <p class="italic text-lg mb-4">
-                        "El soporte de los mentores es increíble. Me guiaron paso a paso hasta que entendí los conceptos más complejos. ¡Recomiendo este curso a cualquiera!"
+                        "El soporte de los mentores es increíble. Me guiaron paso a paso hasta que entendí los conceptos
+                        más complejos. ¡Recomiendo este curso a cualquiera!"
                     </p>
                     <div class="flex flex-col items-center">
-                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=J" alt="Avatar de Juan P." class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
+                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=J" alt="Avatar de Juan P."
+                            class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
                         <p class="font-semibold text-white">Juan P.</p>
                         <p class="text-sm">Ingeniero de Software</p>
                     </div>
@@ -251,10 +276,12 @@
                 <!-- Testimonial 3 -->
                 <div class="card p-6 rounded-2xl text-center">
                     <p class="italic text-lg mb-4">
-                        "Pasé de un trabajo sin futuro a una carrera que me apasiona. El temario es súper completo y está al día con las últimas tecnologías."
+                        "Pasé de un trabajo sin futuro a una carrera que me apasiona. El temario es súper completo y
+                        está al día con las últimas tecnologías."
                     </p>
                     <div class="flex flex-col items-center">
-                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=M" alt="Avatar de Marta V." class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
+                        <img src="https://placehold.co/64x64/161b22/c9d1d9?text=M" alt="Avatar de Marta V."
+                            class="w-16 h-16 rounded-full border-2 border-green-500 mb-2">
                         <p class="font-semibold text-white">Marta V.</p>
                         <p class="text-sm">DevOps Engineer</p>
                     </div>
@@ -263,6 +290,27 @@
         </div>
     </section>
 
+    <section id="faq" class="py-16 bg-[#0d1117]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-8">Preguntas frecuentes</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="card p-4 rounded-lg">
+                    <summary class="cursor-pointer font-semibold text-white">¿Necesito conocimientos previos?</summary>
+                    <p class="mt-2 text-sm">No, nuestros cursos comienzan desde lo básico y avanzan hasta nivel
+                        profesional.</p>
+                </details>
+                <details class="card p-4 rounded-lg">
+                    <summary class="cursor-pointer font-semibold text-white">¿Ofrecen facilidades de pago?</summary>
+                    <p class="mt-2 text-sm">Sí, contamos con planes de pago flexibles y becas disponibles.</p>
+                </details>
+                <details class="card p-4 rounded-lg">
+                    <summary class="cursor-pointer font-semibold text-white">¿El certificado tiene validez?</summary>
+                    <p class="mt-2 text-sm">Nuestros certificados están avalados por empresas del sector tecnológico.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
     <!-- Call to Action Section -->
     <section class="py-20 text-center bg-gradient-to-r from-green-600 to-green-800 text-white rounded-t-3xl">
         <div class="container mx-auto px-4">
@@ -270,22 +318,107 @@
             <p class="text-lg mb-8 max-w-2xl mx-auto">
                 No esperes más. El futuro de la tecnología te espera.
             </p>
-            <a href="#cursos" class="cta-button bg-white text-green-800 hover:text-green-700">
+            <!-- Botón que abre el modal -->
+            <button onclick="openModal()" class="cta-button bg-white text-green-800 hover:text-green-700">
                 ¡Inscríbete ahora!
-            </a>
+            </button>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="modal-inscripcion"
+        class="fixed inset-0 hidden bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div class="bg-[#161b22] text-white rounded-2xl shadow-lg p-8 w-full max-w-md relative">
+            <!-- Botón de cerrar -->
+            <button onclick="closeModal()"
+                class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+
+            <h3 class="text-2xl font-bold mb-4 text-center">Formulario de Inscripción</h3>
+            <form id="form-inscripcion" class="space-y-4">
+                <div>
+                    <label for="nombre" class="block text-sm font-semibold mb-1">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required
+                        class="w-full px-4 py-2 rounded-lg text-black">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-semibold mb-1">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-lg text-black">
+                </div>
+                <div>
+                    <label for="telefono" class="block text-sm font-semibold mb-1">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,}" placeholder="Ej: 987654321"
+                        required class="w-full px-4 py-2 rounded-lg text-black">
+                </div>
+                <button type="submit" class="cta-button w-full">Enviar inscripción</button>
+            </form>
+            <p id="msg-exito" class="hidden text-green-400 font-semibold mt-4 text-center">✅ ¡Inscripción enviada con
+                éxito!</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        const modal = document.getElementById("modal-inscripcion");
+        const form = document.getElementById("form-inscripcion");
+        const msgExito = document.getElementById("msg-exito");
+
+        function openModal() {
+            modal.classList.remove("hidden");
+        }
+
+        function closeModal() {
+            modal.classList.add("hidden");
+        }
+
+        // Validación del formulario
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nombre = form.nombre.value.trim();
+            const email = form.email.value.trim();
+            const telefono = form.telefono.value.trim();
+
+            if (nombre === "" || email === "" || telefono === "") {
+                alert("Por favor completa todos los campos.");
+                return;
+            }
+
+            // Verificación simple de email
+            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regexEmail.test(email)) {
+                alert("Por favor ingresa un correo válido.");
+                return;
+            }
+
+            // Verificación de teléfono (mínimo 9 dígitos numéricos)
+            if (!/^\d{9,}$/.test(telefono)) {
+                alert("Por favor ingresa un teléfono válido (mínimo 9 dígitos).");
+                return;
+            }
+
+            // Si pasa validación
+            msgExito.classList.remove("hidden");
+            form.reset();
+
+            // Cerrar modal después de 2 segundos
+            setTimeout(() => {
+                closeModal();
+                msgExito.classList.add("hidden");
+            }, 2000);
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="py-8 text-center text-sm text-[#768390] bg-[#0d1117]">
         <div class="container mx-auto px-4">
             <p>&copy; 2024 Cursos Full Stack. Todos los derechos reservados.</p>
             <p class="mt-2">
-                <a href="#" class="hover:text-white">Política de Privacidad</a> | 
+                <a href="#" class="hover:text-white">Política de Privacidad</a> |
                 <a href="#" class="hover:text-white">Términos y Condiciones</a>
             </p>
         </div>
     </footer>
 
 </body>
+
 </html>
